@@ -1,0 +1,188 @@
+[
+ {
+  "file": "empty",
+  "round": 1,
+  "before": {
+   "count": "8",
+   "failedCards": 0,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 1,
+   "unreadCards": 2
+  },
+  "errors": [
+   "413 sources"
+  ]
+ },
+ {
+  "file": "empty",
+  "round": 2,
+  "before": {
+   "count": "8",
+   "failedCards": 1,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 2,
+   "unreadCards": 2
+  },
+  "errors": [
+   "413 sources"
+  ]
+ },
+ {
+  "file": "empty",
+  "round": 3,
+  "before": {
+   "count": "8",
+   "failedCards": 2,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": [
+   "413 sources"
+  ]
+ },
+ {
+  "file": "big50",
+  "round": 1,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "big50",
+  "round": 2,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "big50",
+  "round": 3,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "big5",
+  "round": 1,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "big5",
+  "round": 2,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "big5",
+  "round": 3,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "exe",
+  "round": 1,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "exe",
+  "round": 2,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ },
+ {
+  "file": "exe",
+  "round": 3,
+  "before": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "after": {
+   "count": "8",
+   "failedCards": 3,
+   "unreadCards": 2
+  },
+  "errors": []
+ }
+]

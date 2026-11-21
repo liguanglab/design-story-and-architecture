@@ -1,0 +1,32 @@
+[
+ {
+  "round": 1,
+  "startedAt": 6,
+  "cutLen": 4247,
+  "firstGrowth": 40,
+  "finalLen": 4455,
+  "complete": true,
+  "netHintSeen": false,
+  "cost": 41.23
+ },
+ {
+  "round": 2,
+  "startedAt": 6,
+  "cutLen": 4570,
+  "firstGrowth": 90,
+  "finalLen": 4795,
+  "complete": true,
+  "netHintSeen": false,
+  "cost": 7.84
+ },
+ {
+  "round": 3,
+  "startedAt": 6,
+  "cutLen": 5016,
+  "firstGrowth": 100,
+  "finalLen": 5133,
+  "complete": true,
+  "netHintSeen": false,
+  "cost": 7.51
+ }
+]

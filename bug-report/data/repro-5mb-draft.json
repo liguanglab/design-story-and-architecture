@@ -1,0 +1,32 @@
+{
+ "rows5": [
+  {
+   "name": "五兆-B",
+   "snippet": "NOT_FOUND"
+  },
+  {
+   "name": "五兆-C",
+   "snippet": "NOT_FOUND"
+  }
+ ],
+ "rowsDraft": [
+  {
+   "round": 1,
+   "before": "草稿复现-1：刷新后这段字应该消失",
+   "after": "",
+   "stillOnPage": false
+  },
+  {
+   "round": 2,
+   "before": "草稿复现-2：刷新后这段字应该消失",
+   "after": "",
+   "stillOnPage": false
+  },
+  {
+   "round": 3,
+   "before": "草稿复现-3：刷新后这段字应该消失",
+   "after": "",
+   "stillOnPage": false
+  }
+ ]
+}

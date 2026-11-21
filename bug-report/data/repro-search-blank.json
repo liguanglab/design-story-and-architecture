@@ -1,0 +1,31 @@
+{
+ "searchResults": [
+  {
+   "q": "空文件",
+   "failedShown": 1,
+   "emptyState": false
+  },
+  {
+   "q": "zzz_绝对不存在的词_999",
+   "failedShown": 1,
+   "emptyState": false
+  }
+ ],
+ "blank": [
+  {
+   "round": 1,
+   "readyBefore": true,
+   "blankSeconds": 2
+  },
+  {
+   "round": 2,
+   "readyBefore": true,
+   "blankSeconds": 2
+  },
+  {
+   "round": 3,
+   "readyBefore": true,
+   "blankSeconds": 2
+  }
+ ]
+}

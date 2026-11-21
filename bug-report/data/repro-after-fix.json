@@ -1,0 +1,27 @@
+﻿{
+ "runId": "repro-mwnxjyh9-ncje8s",
+ "at": "2026-11-19T19:16:19.245Z",
+ "skillDir": "<本地仓库路径>",
+ "results": [
+  {
+   "name": "A/未知开关被忽略",
+   "reproduced": false,
+   "detail": "exit=1 实际模型=? 扣费=0.00"
+  },
+  {
+   "name": "B/余额充足却报额度不足",
+   "reproduced": true,
+   "detail": "credits=9.36 exit=1 → {\"error\":\"NO_CREDITS\",\"message\":\"POST /image_gen/async: not enough credits or the plan doesn't include this model (insuf"
+  },
+  {
+   "name": "B2/失败留下残卡",
+   "reproduced": true,
+   "detail": "画布上 \"✗ no credits\" 卡片数=1"
+  },
+  {
+   "name": "C/超时仍返回 exit 0",
+   "reproduced": false,
+   "detail": "exit=3 超时后仍 running=true next=?"
+  }
+ ]
+}

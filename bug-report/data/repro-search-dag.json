@@ -1,0 +1,54 @@
+{
+ "search": [
+  {
+   "round": 1,
+   "failedShown": 0,
+   "hasEmptyState": false
+  },
+  {
+   "round": 2,
+   "failedShown": 0,
+   "hasEmptyState": false
+  }
+ ],
+ "dag": [
+  {
+   "round": 1,
+   "canvas": "f23cd65e-d678-45b6-a95c-f631f2d10853",
+   "a": "7af754ee",
+   "b": "bfe04066",
+   "c": "9fc58cab",
+   "bStill": true,
+   "bHasArrow": true,
+   "bStale": false,
+   "before": [
+    "text   7af754ee  \"写一句关于秋天的短诗\"  claude-haiku-5-5  ✓  @-192,-260 384×520",
+    "text   bfe04066  \"把上一句改得更冷清\"  claude-haiku-5-5  ✓  @224,-260 384×520  ← 7af754ee",
+    "text   9fc58cab  \"再续一句\"  claude-haiku-5-5  ✓  @640,-260 384×520  ← bfe04066"
+   ],
+   "after": [
+    "text   bfe04066  \"把上一句改得更冷清\"  claude-haiku-5-5  ✓  @224,-260 384×520",
+    "text   9fc58cab  \"再续一句\"  claude-haiku-5-5  ✓  @640,-260 384×520  ← bfe04066"
+   ]
+  },
+  {
+   "round": 2,
+   "canvas": "b7aea400-2d20-4f42-8bf2-a0d2f81fadf8",
+   "a": "0a3652cf",
+   "b": "c2d0cc25",
+   "c": "31f35a4a",
+   "bStill": true,
+   "bHasArrow": true,
+   "bStale": false,
+   "before": [
+    "text   0a3652cf  \"写一句关于秋天的短诗\"  claude-haiku-5-5  ✓  @-192,-260 384×520",
+    "text   c2d0cc25  \"把上一句改得更冷清\"  claude-haiku-5-5  ✓  @224,-260 384×520  ← 0a3652cf",
+    "text   31f35a4a  \"再续一句\"  claude-haiku-5-5  ✓  @640,-260 384×520  ← c2d0cc25"
+   ],
+   "after": [
+    "text   c2d0cc25  \"把上一句改得更冷清\"  claude-haiku-5-5  ✓  @224,-260 384×520",
+    "text   31f35a4a  \"再续一句\"  claude-haiku-5-5  ✓  @640,-260 384×520  ← c2d0cc25"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+--- a/scripts/index.ts（修复1后）
++++ b/scripts/index.ts（修复1+2）
+@@ -414,6 +414,12 @@
+ 				},
+ 			});
+ 	const lost = lostIds.length ? cardsFrom(await fetchRowsById(ctx.api, lostIds)).map(resultOf).map((r) => (r.status === "running" ? { ...r, code: "SENT_UNKNOWN" } : r)) : [];
++	// 超时不能被当成"成功"：没有 --no-wait 且仍有卡片在跑，退出码给 3，便于脚本判断
++	const stillRunning = waited.filter((r) => r.status === "running");
++	if (!has(a, "no-wait") && stillRunning.length) {
++		log(`⏱ wait timed out: ${stillRunning.length} card(s) still running — re-run \`wait\` later or use --timeout to wait longer.`);
++		process.exitCode = 3;
++	}
+ 	const byId = new Map([...waited, ...lost].map((r) => [r.id, r]));
+ 	await finish(ctx, convId, ids.map((id) => byId.get(id)).filter((r): r is Result => !!r), extra, { charged: charged && !has(a, "no-wait"), team });
+ }

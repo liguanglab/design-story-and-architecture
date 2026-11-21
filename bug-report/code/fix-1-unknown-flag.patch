@@ -1,0 +1,91 @@
+--- a/scripts/index.ts（修复前）
++++ b/scripts/index.ts（修复1后）
+@@ -97,6 +97,73 @@
+ 
+ // ---------- args ----------
+ 
++const KNOWN_FLAGS = new Set([
++	"add",
++	"agent",
++	"angles",
++	"as",
++	"audio",
++	"bot",
++	"canvas",
++	"cast",
++	"cols",
++	"description",
++	"draft",
++	"dry-run",
++	"duration",
++	"edit-video",
++	"extend",
++	"file",
++	"first",
++	"for",
++	"fresh",
++	"from",
++	"full",
++	"gap",
++	"group",
++	"help",
++	"input",
++	"into",
++	"json",
++	"kind",
++	"language",
++	"last",
++	"layout",
++	"limit",
++	"lyrics",
++	"model",
++	"n",
++	"name",
++	"near",
++	"no-audio",
++	"no-open",
++	"no-wait",
++	"open",
++	"out",
++	"preset",
++	"quality",
++	"quiet",
++	"ratio",
++	"ref",
++	"resolution",
++	"rows",
++	"shots",
++	"since",
++	"site",
++	"size",
++	"start",
++	"style",
++	"subject",
++	"system",
++	"timeout",
++	"title",
++	"to",
++	"transparent",
++	"vocals",
++	"voice",
++	"with",
++]);
++
+ const BOOLEAN_FLAGS = new Set([
+ 	"json", "quiet", "no-wait", "wait", "all", "full", "fresh", "dry-run", "no-audio", "audio", "draft",
+ 	"transparent", "no-open", "instrumental", "remove", "help",
+@@ -120,6 +187,14 @@
+ 		if (a.startsWith("--")) {
+ 			const eq = a.indexOf("=");
+ 			const name = eq > 0 ? a.slice(2, eq) : a.slice(2);
++			// 未知开关不要静默吞掉：拼错 --model 会退回默认模型且更贵（实测贵 28 倍）
++			if (!KNOWN_FLAGS.has(name)) {
++				const guess = [...KNOWN_FLAGS].find((k) => k.startsWith(name.slice(0, 3)) || name.startsWith(k.slice(0, 3)));
++				throw new CliError(
++					`Unknown flag --${name}.` + (guess ? ` Did you mean --${guess}?` : " Run `help` for the flag list."),
++					"INVALID_PARAM",
++				);
++			}
+ 			let value: string;
+ 			if (eq > 0) value = a.slice(eq + 1);
+ 			else if (BOOLEAN_FLAGS.has(name) || i + 1 >= argv.length || argv[i + 1]!.startsWith("--")) value = "true";

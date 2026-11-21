@@ -1,0 +1,26 @@
+[
+ {
+  "file": "五兆-1.txt",
+  "info": "NOT_FOUND"
+ },
+ {
+  "file": "五兆-2.txt",
+  "info": "NOT_FOUND"
+ },
+ {
+  "file": "五兆-3.txt",
+  "info": "NOT_FOUND"
+ },
+ {
+  "file": "不支持-1.exe",
+  "info": "\"不支持-1 不支持-1.exe EXE · 9 B xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\""
+ },
+ {
+  "file": "不支持-2.exe",
+  "info": "\"不支持-2 不支持-2.exe EXE · 9 B FILE 不支持-1 不支持-1.exe EXE · 9 B xxxxxxxxxxxxx\""
+ },
+ {
+  "file": "不支持-3.exe",
+  "info": "\"不支持-3 不支持-3.exe EXE · 9 B FILE 不支持-2 不支持-2.exe EXE · 9 B FILE 不支持-1 不支\""
+ }
+]
